@@ -1,1 +1,50 @@
-Word Checker Tool - Logic-Based Console Application 🔍Project TitleWord Checker Tool – C++ Application for Palindrome Verification using STLResearch ProblemUsers often have difficulty manually verifying if long phrases or complex strings are palindromes. Standard string manipulation can be inefficient or difficult to read. There is a need for a tool that demonstrates how specific data structures can automate this logic while handling spaces and case sensitivity.MotivationThe goal of this project is to develop Word Checker Tool, a streamlined terminal application that centralizes string verification. By using a "dual-buffer" approach (Stack and Queue), the project demonstrates how to build an efficient algorithm that compares a word from both ends simultaneously, showcasing the power of C++ Standard Template Library (STL).Control FlowInitialization: The user opens the application, and the system displays a visual header and prepares the memory containers.Data Entry: The user enters a phrase. The system loops through each character, cleaning the data (removing spaces/converting to lowercase).Loading: Characters are simultaneously pushed into a Stack (reversing the word) and a Queue (keeping the word normal).Verification: The system compares the top of the Stack against the front of the Queue. If a mismatch is found, it immediately stops the check.Result Display: The final status (Palindrome or Not) is printed to the console, and the user is prompted to try another word.Implementation StrategyLanguage: Built using C++ for high performance and low-level memory control.Data Structures: Utilizes std::stack and std::queue for logic separation.Algorithm: Implements a $O(n)$ linear scan for both character loading and comparison logic.Data Management:Strings are processed into char elements.Case-insensitivity is managed via the tolower() function.App Structuremain.cpp: The primary source file containing the project header, data logic, and the user interaction loop.
+# Word Checker Tool - Logic-Based Console Application 🔍
+
+## Project Title
+**Word Checker Tool** – C++ Application for Palindrome Verification using STL
+
+---
+
+## Research Problem
+Users often have difficulty manually verifying if long phrases or complex strings are palindromes. Standard string manipulation can be inefficient or difficult to read. There is a need for a tool that demonstrates how specific data structures can automate this logic while handling spaces and case sensitivity.
+
+---
+
+## Motivation
+The goal of this project is to develop **Word Checker Tool**, a streamlined terminal application that centralizes string verification. By using a "dual-buffer" approach (Stack and Queue), the project demonstrates how to build an efficient algorithm that compares a word from both ends simultaneously, showcasing the power of C++ Standard Template Library (STL).
+
+---
+
+## Control Flow
+* **Initialization**: The user opens the application, and the system displays a visual header and prepares the memory containers.
+* **Data Entry**: The user enters a phrase. The system loops through each character, cleaning the data (removing spaces/converting to lowercase).
+* **Loading**: Characters are simultaneously pushed into a **Stack** (reversing the word) and a **Queue** (keeping the word normal).
+* **Verification**: The system compares the `top` of the Stack against the `front` of the Queue. If a mismatch is found, it immediately stops the check.
+* **Result Display**: The final status (Palindrome or Not) is printed to the console, and the user is prompted to try another word.
+
+---
+
+## Implementation Strategy
+* **Language**: Built using **C++** for high performance and low-level memory control.
+* **Data Structures**: Utilizes **std::stack** and **std::queue** for logic separation.
+* **Algorithm**: Implements a $O(n)$ linear scan for both character loading and comparison logic.
+* **Data Management**:
+    * Strings are processed into **char** elements.
+    * Case-insensitivity is managed via the `tolower()` function.
+
+---
+
+## App Structure
+* `c++.Word Checker Tool.cpp`: The primary source file containing the project header, data logic, and the user interaction loop.
+
+---
+
+## How to Run
+1.  **Compile the Project**:
+    ```bash
+    g++ "c++.Word Checker Tool.cpp" -o WordChecker
+    ```
+2.  **Run the Tool**:
+    ```bash
+    ./WordChecker
+    ```
